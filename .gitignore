@@ -1,11 +1,6 @@
 # dependencies
-node_modules
+celerybeat-schedule
+db.sqlite3
+media/*
 
 # logs
-npm-debug.log
-
-# Nuxt build
-.nuxt
-
-# Nuxt generate
-dist
