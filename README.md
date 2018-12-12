@@ -1,23 +1,23 @@
 # security-scorecard-online-store
 
-> Nuxt.js project
+> Django project
 
 ## Build Setup
+Tested on ubuntu 18, Python 3.6.7
+
+### initial setup
 
 ``` bash
-# install dependencies
-$ npm install # Or yarn install
+$ sudo apt install redis-server
+$ pip install requirement
+$ python manage.py makemigrations
+$ python manage.py migrate
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+# serve with hot reload at localhost:8000
+$ python manage.py runserver
+#login at localhost:8000/admin with credentials admin/admin
 
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
 ```
+# Docker image
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-
+# Test
