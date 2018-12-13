@@ -1,1 +1,1 @@
-web: security-scorecard-online-stor.wsgi
+web: gunicorn security-scorecard-online-stor.wsgi
