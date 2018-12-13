@@ -17,7 +17,7 @@
         </li>
       {% endfor %}
     </ul>
-    <p>Total: ${{ cart.get_total_price }}</p>
+    <p>Total: {{ cart.get_total_price }}Kč </p>
   </div>
 
   <form action="." method="post" class="order-form">
