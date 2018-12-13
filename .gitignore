@@ -2,5 +2,5 @@
 celerybeat-schedule
 db.sqlite3
 media/*
-
+venv
 # logs
