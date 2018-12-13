@@ -105,8 +105,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # }
 
 DATABASES = {
-    'default': dj_database_url.config('postgres://dpqbzkxzjxresn:da1e75186815aff52b0ad34e44757a62ce6f34621656c60136e042a0c9aff65f@ec2-54-247-102-1.eu-west-1.compute.amazonaws.com:5432/d3040neh48o10')
+    'default': dj_database_url.config(default='postgres://localhost')
 }
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
