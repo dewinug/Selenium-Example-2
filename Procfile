@@ -1,1 +1,1 @@
-web: security-scorecard-online-store.wsgi
+web: security-scorecard-online-stor.wsgi
