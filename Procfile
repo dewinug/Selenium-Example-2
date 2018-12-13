@@ -1,1 +1,1 @@
-web: gunicorn security-scorecard-online-store.wsgi
+web: gunicorn security-scorecard-online-store.myshop.wsgi
