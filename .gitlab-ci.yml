@@ -13,3 +13,4 @@ staging:
   - dpl --provider=heroku --app=security-scorecard-online-stor --api-key=$HEROKU_STAGING_API_KEY
   only:
   - master
+
