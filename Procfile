@@ -1,1 +1,1 @@
-web: gunicorn security-scorecard-online-store.myshop.wsgi
+web: gunicorn myshop.wsgi:application --log-file -
