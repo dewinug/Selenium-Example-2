@@ -23,7 +23,7 @@ test:
   - rm -rf chromedriver_linux64.zip
   - ls
   - export PATH=/rf_test/bin:/rf_test/bin/drivers:$PATH
-  - /rf_test/binrun-tests-in-virtual-screen.sh
+  - /rf_test/bin/run-tests-in-virtual-screen.sh
   only:
     - master
 
