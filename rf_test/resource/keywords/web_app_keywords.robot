@@ -16,9 +16,8 @@ ${DELAY}          0.5
 
 browser is opened to home page
     [Documentation]
-#    Start Virtual Display    1920    1080
+    Start Virtual Display    1920    1080
     Open Browser    ${SERVER}    ${BROWSER}
-#    Maximize Browser Window
     Set Selenium Speed    ${DELAY}
     Home Page Should Be Opened
 
@@ -73,9 +72,25 @@ user navigates to admin page
 
 I search for order by id ${order id}
     [Documentation]
+    wait until page contains element    css=#searchbar
     Input Text     css=#searchbar    ${order id}
     click button Search
 
 click button ${label}
     [Documentation]
     click element     xpath=//*[@value="${label}" and contains(@type, "submit")]
+
+select and deleted filtered item
+    click element     name=_selected_action
+    #Delete selected item
+    Click element    css=#changelist-form > div.actions > label > select
+    click element    css=#changelist-form > div.actions > label > select > option:nth-child(2)
+
+    # click Go click button
+    click element    css=#changelist-form > div.actions > button
+    click button Yes, I'm sure
+
+
+I navigate to orders page
+    Goto     ${SERVER}/admin/orders/order/
+
