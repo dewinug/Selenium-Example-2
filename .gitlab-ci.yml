@@ -21,6 +21,7 @@ test:
   - chown $USER:$USER /usr/bin/chromedriver
   - chmod +x /usr/bin/chromedriver
   - rm -rf chromedriver_linux64.zip
+  - robot -d rf_test/reports rf_test/test
   only:
     - master
 
