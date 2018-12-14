@@ -38,14 +38,14 @@
             </td>
             <td><a href="{% url "cart:cart_remove" product.id %}">Remove</a></td>
             <td class="num">{{ item.price }}Kč</td>
-            <td class="num">{{ item.total_price }}Kč</td>
+            <td class="num">{{ item.total_price }} Kč</td>
           </tr>
         {% endwith %}
       {% endfor %}
       <tr class="total">
         <td>Total</td>
         <td colspan="4"></td>
-        <td class="num">${{ cart.get_total_price }}</td>
+        <td class="num">{{ cart.get_total_price }} Kč</td>
       </tr>
     </tbody>
   </table>
