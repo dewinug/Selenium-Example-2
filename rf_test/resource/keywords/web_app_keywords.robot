@@ -3,116 +3,79 @@
 Documentation   Importing web and robotframework built-in keywords.
 Library  SeleniumLibrary   timeout=10  #run_on_failure=CapturePageScreenShot
 Library      XvfbRobot
+Library    OperatingSystem
+Library    FakerLibrary
 
 *** Variables ***
-${SERVER}         localhost:8000
+${SERVER}         https://security-scorecard-online-stor.herokuapp.com
 ${BROWSER}        chrome
 ${DELAY}          0.5
-${VALID USER}     demo
 
 *** Keywords ***
 #########################################################
+
 browser is opened to home page
     [Documentation]
 #    Start Virtual Display    1920    1080
     Open Browser    ${SERVER}    ${BROWSER}
-    Maximize Browser Window
+#    Maximize Browser Window
     Set Selenium Speed    ${DELAY}
     Home Page Should Be Opened
-
-I search for item "${item to search}"
-    [Documentation]
-    Wait Until Element Is Visible    css=#twotabsearchtextbox
-    click element    css=#twotabsearchtextbox
-    Input Text    css=#twotabsearchtextbox    ${item to search}
-    click element    css=#nav-search > form > div.nav-right > div > input
-
-I "${item name}"
-    Wait Until Element Is Visible    xpath=//*[@value="Save for later" and contains(@aria-label, "${item name}")]
-    click element     xpath=//*[@value="Save for later" and contains(@aria-label, "${item name}")]
-
-I click "${item name}"
-    [Documentation]
-    Wait Until Element Is Visible    xpath=//*[@value="Delete" and contains(@aria-label, "${item name}")]
-    click element     xpath=//*[@value="Delete" and contains(@aria-label, "${item name}")]
-
-click only item in save for later list
-        [Documentation]
-        Wait Until Element Is Visible    xpath=//*[@id="savedCartViewForm"]/div[3]/div/div[4]/div/div[1]/div/div/div[2]/ul/li[1]/span/a/span
-        click element     xpath=//*[@id="savedCartViewForm"]/div[3]/div/div[4]/div/div[1]/div/div/div[2]/ul/li[1]/span/a/span
-
-Click Paperback button
-    [Documentation]
-    Wait Until Element Is Visible    xpath=//*[@role="button" and contains(., "Paperback")]
-    click element     xpath=//*[@role="button" and contains(., "Paperback")]
-
-
-I opened searched item "${item to search}"
-    [Documentation]
-    click link    ${item to search}
-
-I add opened item to shopping cart
-    [Documentation]
-    Wait Until Element Is Visible    css=#add-to-cart-button
-    click element    css=#add-to-cart-button
 
 Home Page Should Be Opened
     [Documentation]
     Title Should Be    Products
 
-I select "${type}" book type
+I add product "${link}" to cart
     [Documentation]
-    Wait Until Element Is Visible    xpath=//*[@class="a-size-large mediaTab_title" and contains(., "${type}")]
-    click element    xpath=//*[@class="a-size-large mediaTab_title" and contains(., "${type}")]
+    click link    ${link}
+    click button Add to cart
 
-I open shopping cart
+I remove "${expected}" from cart
     [Documentation]
-    Wait Until Element Is Visible    css=#nav-cart-count
-    click element    css=#nav-cart-count
+    ${row count}=    Get Element Count    xpath=//*[@id="content"]/table/tbody/tr
+    ${index}    Set Variable     1
+    : FOR    ${index}    IN    ${row count}
+    \    ${value}=    Get Table Cell     xpath=//*[@id="content"]/table    ${index}    2
+    \    Run Keyword If    '${value}'== '${expected}'    click element     xpath=//*[@id="content"]/table/tbody/tr[2]/td[4]/a
+    \    ${index}=    Evaluate    ${index}+1
+    \    exit for loop if    ${index} == ${row count}
 
-
-
-
-#Login Should Have Failed
-#    [Documentation]
-#    [Tags]
-#    Location Should Be    ${ERROR URL}
-#    Title Should Be    Error Page
-#
-
-Go To home page
+I place order
     [Documentation]
-    [Tags]
-    Go To    ${SERVER}
-    Home Page Should Be Opened
+    ${name}=    FakerLibrary.Name
+    ${email}=    FakerLibrary.Email
+    ${city}=    FakerLibrary.City
+    ${postcode}=    FakerLibrary.Postcode
+    ${address}=    FakerLibrary.Address
+    Wait Until Element Is Visible    css=#id_first_name
+    click element     css=#id_first_name
+    Input Text     css=#id_first_name     ${name}
+    Input Text     css=#id_last_name    ${name}
+    Input Text     css=#id_email    ${email}
+    Input Text     css=#id_address    ${address}
+    Input Text     css=#id_postal_code    ${postcode}
+    Input Text     css=#id_city    ${city}
+    click button Place order
 
-#Input Username
-#    [Documentation]
-#    [Tags]
-#    [Arguments]    ${username}
-#    Input Text    username_field    ${username}
-#
-#Input Password
-#    [Documentation]
-#    [Tags]
-#    [Arguments]    ${password}
-#    Input Text    password_field    ${password}
-#
-#Submit Credentials
-#    [Documentation]
-#    [Tags]
-#    Click Button    login_button
-#
-#Welcome Page Should Be Open
-#    [Documentation]
-#    [Tags]
-#    Location Should Be    ${WELCOME URL}
-#    Title Should Be    Welcome Page
-#
-#User "${username}" logs in with password "${password}"
-#    [Documentation]
-#    [Tags]
-#    Input username    ${username}
-#    Input password    ${password}
-#    Submit credentials
-#
+user notes the order number
+    [Documentation]
+    wait until page contains    Your order has been successfully completed. Your order number is
+    ${order id}=    Get Text    xpath=//*[@id="content"]/p/strong
+    Set Suite Variable    ${order id}    ${order id}
+
+user navigates to admin page
+    [Documentation]
+    Goto     ${SERVER}/admin
+    Input Text     css=#id_username    admin
+    Input Text     css=#id_password    admin
+    click button Log in
+
+I search for order by id ${order id}
+    [Documentation]
+    Input Text     css=#searchbar    ${order id}
+    click button Search
+
+click button ${label}
+    [Documentation]
+    click element     xpath=//*[@value="${label}" and contains(@type, "submit")]
