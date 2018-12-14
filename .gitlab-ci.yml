@@ -1,17 +1,26 @@
-
-staging:
-  type: deploy
-  script:
-  - apt-get update -qy
-  - apt-get install -y ruby-dev
-  - gem install dpl
-  - dpl --provider=heroku --app=security-scorecard-online-stor --api-key=$HEROKU_STAGING_API_KEY
-  only:
-  - master
+#
+#staging:
+#  type: deploy
+#  script:
+#  - apt-get update -qy
+#  - apt-get install -y ruby-dev
+#  - gem install dpl
+#  - dpl --provider=heroku --app=security-scorecard-online-stor --api-key=$HEROKU_STAGING_API_KEY
+#  only:
+#  - master
 
 test:
   script:
   - apt-get update -qy
   - apt-get install -y python-dev python-pip
+  - apt-get install -y unzip wget libxss1 libappindicator1 libindicator7 xvfb
   - pip install -r requirements.txt
-  - echo "running tests"
+  - wget -q "https://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip"
+  - unzip chromedriver_linux64.zip
+  - mv chromedriver /usr/bin/chromedriver
+  - chown $USER:$USER /usr/bin/chromedriver
+  - chmod +x /usr/bin/chromedriver
+  - rm -rf chromedriver_linux64.zip
+  only:
+    - master
+
