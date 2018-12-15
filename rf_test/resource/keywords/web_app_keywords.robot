@@ -14,14 +14,6 @@ ${DELAY}          0.5
 *** Keywords ***
 #########################################################
 
-#browser is opened to home page
-#    [Documentation]
-#    Start Virtual Display    1920    1080
-#    Open Browser    ${SERVER}    ${BROWSER}
-#    Set Window Size    1920    1080
-#    Set Selenium Speed    ${DELAY}
-#    Home Page Should Be Opened
-
 I Open Browser To main page
     Run Keyword If      '${BROWSER}' == 'HeadlessChrome'      Open Headless Chrome Browser to Page
     ...     ELSE IF     '${BROWSER}' == 'HeadlessFirefox'     Firefox true headless
@@ -47,11 +39,6 @@ Firefox true headless
     Set Window Size    1920    1080
     Go To    ${PAGE URL}
     Page Should Be Open
-
-Open Browser to Page
-  Open Browser    ${PAGE URL}    ${BROWSER}
-  Maximize Browser Window
-  Main Page Should Be Opened
 
 Main Page Should Be Opened
     [Documentation]
