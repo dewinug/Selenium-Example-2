@@ -24,6 +24,8 @@ test:
   - chown $USER:$USER /usr/bin/chromedriver
   - chmod +x /usr/bin/chromedriver
   - rm -rf chromedriver_linux64.zip
+  - /usr/bin/chromedriver --verbose --log-path=/var/log/chromedriver --no-sandbox $@
+  - /usr/bin/google-chrome --disable-gpu --no-sandbox $@
   - robot -d rf_test/reports rf_test/test
   only:
     - master
