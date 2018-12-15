@@ -14,7 +14,7 @@ test:
   - apt-get update && apt-get install --quiet --assume-yes python-dev python-pip unzip wget
   - pip install -U pip
   - echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
-  - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+  - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
   - apt-get install google-chrome-stable
   - cp rf_test/requirements.txt /tmp/requirements.txt
   - pip install -r /tmp/requirements.txt
