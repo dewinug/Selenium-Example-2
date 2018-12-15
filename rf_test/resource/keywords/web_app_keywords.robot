@@ -7,8 +7,8 @@ Library    OperatingSystem
 Library    FakerLibrary
 
 *** Variables ***
-#${PAGE URL}         https://security-scorecard-online-stor.herokuapp.com
-${PAGE URL}         localhost:8000
+${PAGE URL}         https://security-scorecard-online-stor.herokuapp.com
+#${PAGE URL}         localhost:8000
 ${BROWSER}        chrome
 ${DELAY}          0.5
 
