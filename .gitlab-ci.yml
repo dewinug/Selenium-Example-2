@@ -14,6 +14,9 @@ test:
   - apt-get update -qy
   - apt-get install -y python-dev python-pip
   - apt-get install -y unzip wget libxss1 libappindicator1 libindicator7 xvfb
+  - wget -q "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+  - apt-get install -y ./google-chrome*.deb
+  - apt-get install -y xvfb
   - pip install -r requirements.txt
   - wget -q "https://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip"
   - unzip chromedriver_linux64.zip
