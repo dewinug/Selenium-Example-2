@@ -15,7 +15,7 @@ Suite Teardown    Close Browser
 
 *** Test Cases ***
 Order Produt
-    Given browser is opened to home page
+    Given Open Browser To main page
     And I add product "pilsner" to cart
     And click link    Continue shopping
     And I add product "Guiness" to cart
