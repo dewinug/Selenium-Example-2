@@ -15,7 +15,8 @@ test:
   - pip install -U pip
   - echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
   - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
-  - apt-get install google-chrome-stable
+  - apt update
+  - apt install google-chrome-stable
   - cp rf_test/requirements.txt /tmp/requirements.txt
   - pip install -r /tmp/requirements.txt
   - CHROMEDRIVER_VERSION=`wget --no-verbose --output-document - https://chromedriver.storage.googleapis.com/LATEST_RELEASE`
