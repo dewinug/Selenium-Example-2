@@ -24,7 +24,7 @@ test:
   - chmod +x /opt/chromedriver/chromedriver
   - ln -fs /opt/chromedriver/chromedriver /usr/local/bin/chromedriver
   - ls
-  - robot -v BROWSER:HeadlessChrome -d rf_test/test
+  - robot -v BROWSER:HeadlessChrome -d rf_test/reports rf_test/test
   only:
     - master
 
