@@ -21,6 +21,6 @@ selenium==3.141.0
 six==1.12.0
 text-unidecode==1.2
 urllib3==1.24.1
-whitenoise==4.1.2
+whitenoise
 wrapt==1.10.11
 xvfbwrapper==0.2.9
