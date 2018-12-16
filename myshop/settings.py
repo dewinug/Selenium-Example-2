@@ -127,6 +127,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Activate Django-Heroku.
+django_heroku.settings(locals())
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/dev/howto/static-files/
@@ -155,5 +157,3 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'Europe/Mariehamn'
 
-# Activate Django-Heroku.
-django_heroku.settings(locals())
