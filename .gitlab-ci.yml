@@ -12,12 +12,18 @@ test:
   - python manage.py makemigrations </dev/null &>/dev/null &
   - python manage.py migrate </dev/null &>/dev/null &
   - python manage.py runserver </dev/null &>/dev/null &
+  - curl localhost:8000
   - CHROMEDRIVER_VERSION=`wget --no-verbose --output-document - https://chromedriver.storage.googleapis.com/LATEST_RELEASE`
   - wget --no-verbose --output-document /tmp/chromedriver_linux64.zip http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip
   - unzip -qq /tmp/chromedriver_linux64.zip -d /opt/chromedriver
   - chmod +x /opt/chromedriver/chromedriver
   - ln -fs /opt/chromedriver/chromedriver /usr/local/bin/chromedriver
   - robot -v BROWSER:HeadlessChrome -v APP_ENV:test -d rf_test/reports rf_test/test
+  artifacts:
+    paths:
+      - public
+      expire_in: 2 weeks
+
   only:
     - master
 
