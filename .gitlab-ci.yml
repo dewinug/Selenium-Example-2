@@ -21,6 +21,7 @@ test:
   only:
     - master
 
+
 #staging:
 #  type: deploy
 #  script:
