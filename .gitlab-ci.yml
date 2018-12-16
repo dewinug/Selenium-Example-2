@@ -34,7 +34,8 @@ publish-test-report:
     stage: deploy
     script:
       - reporDir=$(date +%Y%m%d_%H%M%S)
-      - mkdir public/$reporDir
+      - here=$(pwd)
+      - mkdir public && cd publc && mkdir $reporDir && cd $here
       - mv /builds/sejuba1/security-scorecard-online-store/rf_test/reports/$reporDir public/
     artifacts:
       paths:
