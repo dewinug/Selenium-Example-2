@@ -33,7 +33,6 @@ ENV XVFB_VERSION 1.2.2
 RUN apt-get update && apt-get install -y \
     software-properties-common \
     python-pip \
-    firefox \
     xauth \
     unzip \
     wget \
@@ -63,16 +62,6 @@ RUN pip install \
   robotframework-seleniumlibrary==$SELENIUM_LIBRARY_VERSION \
   robotframework-xvfb==$XVFB_VERSION
 
-## Download and install chromedriver
-#RUN wget -q "https://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip" \
-#    && unzip chromedriver_linux64.zip \
-#    && mkdir /opt/robotframework \
-#    && mkdir /opt/robotframework/drivers \
-#    && mv chromedriver /opt/robotframework/drivers/chromedriver \
-#    && chown root:root /opt/robotframework/drivers/chromedriver \
-#    && chmod +x /opt/robotframework/drivers/chromedriver \
-#    && rm -rf chromedriver_linux64.zip
-
 RUN wget -q "https://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip"
 RUN unzip chromedriver_linux64.zip
 RUN mv chromedriver /usr/bin/chromedriver
@@ -101,5 +90,5 @@ CMD python manage.py runserver
 ENV PATH=/opt/robotframework/bin:/opt/robotframework/drivers:$PATH
 
 # Execute all robot tests
-CMD curl -sSf localhost:8000
+
 CMD ["run-tests-in-virtual-screen.sh"]

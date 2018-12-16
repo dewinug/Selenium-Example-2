@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b502723-01d2-4311-bf9e-d9cb189fb023" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rf_test/test/gherkin_login.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="7b502723-01d2-4311-bf9e-d9cb189fb023" name="Default Changelist" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/bin/chromedriver.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/bin/chromium-browser.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/bin/run-tests-in-virtual-screen.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/Sikuli_java_stderr_1544462605.95.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/Sikuli_java_stdout_1544462605.95.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/geckodriver.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/output.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/reports/selenium-screenshot-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rf_test/resource/keywords/web_app_keywords.robot" beforeDir="false" afterPath="$PROJECT_DIR$/rf_test/resource/keywords/web_app_keywords.robot" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,46 +43,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="105" selection-start-line="105" selection-end-line="105" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myshop/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="15">
+              <caret line="129" selection-start-line="129" selection-end-line="129" />
               <folding>
                 <element signature="e#307#316#0" expanded="true" />
               </folding>
@@ -61,11 +54,44 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="645">
+                <caret line="43" column="3" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="38" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rf_test/resource/keywords/web_app_keywords.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state relative-caret-position="109">
+              <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#236#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -73,16 +99,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rf_test/test/gherkin_login.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+            <state relative-caret-position="45">
+              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
               <folding>
-                <element signature="e#0#1100#0" expanded="true" />
+                <element signature="e#0#582#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>whitenoise</find>
+      <find>HOST</find>
+      <find>allo</find>
+      <find>ALLOWED_HOSTS</find>
+      <find>pric</find>
+      <find>STATIC</find>
+      <find>$</find>
+      <find>redi</find>
+      <find>total</find>
+      <find>price</find>
+      <find>link</find>
+      <find>con</find>
+      <find>SERVER</find>
+      <find>Given Open Browser To main page</find>
+      <find>sud</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,17 +144,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/requirement.txt" />
-        <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/rf_test/bin/chromedriver.sh" />
         <option value="$PROJECT_DIR$/rf_test/bin/chromium-browser.sh" />
         <option value="$PROJECT_DIR$/rf_test/bin/run-tests-in-virtual-screen.sh" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/myshop/wsgi.py" />
+        <option value="$PROJECT_DIR$/shop/templates/shop/product/detail.html" />
+        <option value="$PROJECT_DIR$/shop/templates/shop/product/list.html" />
+        <option value="$PROJECT_DIR$/shop/templates/shop/base.html" />
+        <option value="$PROJECT_DIR$/orders/templates/orders/order/create.html" />
+        <option value="$PROJECT_DIR$/cart/templates/cart/detail.html" />
+        <option value="$PROJECT_DIR$/orders/admin.py" />
+        <option value="$PROJECT_DIR$/shop/admin.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/requirements_production.txt" />
         <option value="$PROJECT_DIR$/rf_test/test/gherkin_login.robot" />
-        <option value="$PROJECT_DIR$/rf_test/resource/keywords/web_app_keywords.robot" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/myshop/settings.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/runDjango.sh" />
+        <option value="$PROJECT_DIR$/rf_test/resource/keywords/web_app_keywords.robot" />
         <option value="$PROJECT_DIR$/.gitlab-ci.yml" />
       </list>
     </option>
@@ -111,6 +176,7 @@
     <option name="width" value="618" />
     <option name="height" value="468" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -122,6 +188,11 @@
             <path>
               <item name="security-scorecard-online-store" type="b2602c69:ProjectViewProjectNode" />
               <item name="security-scorecard-online-store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="security-scorecard-online-store" type="b2602c69:ProjectViewProjectNode" />
+              <item name="security-scorecard-online-store" type="462c0819:PsiDirectoryNode" />
+              <item name="rf_test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -136,12 +207,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/rf_test/resource" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/rf_test/test" />
       <recent name="$PROJECT_DIR$/rf_test" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/rf_test/test" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/rf_test/resource" />
       <recent name="$PROJECT_DIR$/rf_test" />
     </key>
   </component>
@@ -168,29 +241,360 @@
       <option name="presentableId" value="Default" />
       <updated>1544631867114</updated>
     </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <created>1544632382845</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00030" summary="initial commit">
+      <created>1544732861794</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
       <option name="project" value="LOCAL" />
-      <updated>1544632382845</updated>
+      <updated>1544732861794</updated>
     </task>
-    <task id="LOCAL-00002" summary="initial commit">
-      <created>1544633560506</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00031" summary="initial commit">
+      <created>1544733328636</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
-      <updated>1544633560506</updated>
+      <updated>1544733328636</updated>
     </task>
-    <task id="LOCAL-00003" summary="initial commit">
-      <created>1544694416685</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+    <task id="LOCAL-00032" summary="initial commit">
+      <created>1544733890207</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
       <option name="project" value="LOCAL" />
-      <updated>1544694416686</updated>
+      <updated>1544733890207</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00033" summary="initial commit">
+      <created>1544734376324</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1544734376324</updated>
+    </task>
+    <task id="LOCAL-00034" summary="initial commit">
+      <created>1544734716709</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1544734716709</updated>
+    </task>
+    <task id="LOCAL-00035" summary="initial commit">
+      <created>1544735152833</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1544735152833</updated>
+    </task>
+    <task id="LOCAL-00036" summary="initial commit">
+      <created>1544736090247</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1544736090247</updated>
+    </task>
+    <task id="LOCAL-00037" summary="initial commit">
+      <created>1544736627992</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1544736627992</updated>
+    </task>
+    <task id="LOCAL-00038" summary="initial commit">
+      <created>1544738929574</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1544738929574</updated>
+    </task>
+    <task id="LOCAL-00039" summary="initial commit">
+      <created>1544739230671</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1544739230671</updated>
+    </task>
+    <task id="LOCAL-00040" summary="initial commit">
+      <created>1544741806851</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1544741806851</updated>
+    </task>
+    <task id="LOCAL-00041" summary="initial commit">
+      <created>1544742398351</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1544742398351</updated>
+    </task>
+    <task id="LOCAL-00042" summary="initial commit">
+      <created>1544744532068</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1544744532068</updated>
+    </task>
+    <task id="LOCAL-00043" summary="initial commit">
+      <created>1544745287463</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1544745287463</updated>
+    </task>
+    <task id="LOCAL-00044" summary="initial commit">
+      <created>1544778503775</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1544778503775</updated>
+    </task>
+    <task id="LOCAL-00045" summary="initial commit">
+      <created>1544778846681</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1544778846681</updated>
+    </task>
+    <task id="LOCAL-00046" summary="initial commit">
+      <created>1544782577542</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1544782577542</updated>
+    </task>
+    <task id="LOCAL-00047" summary="initial commit">
+      <created>1544783941686</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1544783941686</updated>
+    </task>
+    <task id="LOCAL-00048" summary="initial commit">
+      <created>1544784171129</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1544784171129</updated>
+    </task>
+    <task id="LOCAL-00049" summary="chrome crash fix">
+      <created>1544784495631</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1544784495631</updated>
+    </task>
+    <task id="LOCAL-00050" summary="initial commit">
+      <created>1544785451655</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1544785451657</updated>
+    </task>
+    <task id="LOCAL-00051" summary="initial commit">
+      <created>1544785938633</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1544785938637</updated>
+    </task>
+    <task id="LOCAL-00052" summary="initial commit">
+      <created>1544786098917</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1544786098917</updated>
+    </task>
+    <task id="LOCAL-00053" summary="initial commit">
+      <created>1544786343236</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1544786343236</updated>
+    </task>
+    <task id="LOCAL-00054" summary="initial commit">
+      <created>1544860117127</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1544860117130</updated>
+    </task>
+    <task id="LOCAL-00055" summary="initial commit">
+      <created>1544861033168</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1544861033169</updated>
+    </task>
+    <task id="LOCAL-00056" summary="initial commit">
+      <created>1544861338826</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1544861338826</updated>
+    </task>
+    <task id="LOCAL-00057" summary="initial commit">
+      <created>1544861900395</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1544861900396</updated>
+    </task>
+    <task id="LOCAL-00058" summary="initial commit">
+      <created>1544863046869</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1544863046869</updated>
+    </task>
+    <task id="LOCAL-00059" summary="initial commit">
+      <created>1544865735562</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1544865735563</updated>
+    </task>
+    <task id="LOCAL-00060" summary="initial commit">
+      <created>1544866193837</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1544866193837</updated>
+    </task>
+    <task id="LOCAL-00061" summary="initial commit">
+      <created>1544866266609</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1544866266609</updated>
+    </task>
+    <task id="LOCAL-00062" summary="initial commit">
+      <created>1544866631710</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1544866631710</updated>
+    </task>
+    <task id="LOCAL-00063" summary="initial commit">
+      <created>1544867292880</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1544867292880</updated>
+    </task>
+    <task id="LOCAL-00064" summary="initial commit">
+      <created>1544868058768</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1544868058768</updated>
+    </task>
+    <task id="LOCAL-00065" summary="initial commit">
+      <created>1544868334736</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1544868334736</updated>
+    </task>
+    <task id="LOCAL-00066" summary="initial commit">
+      <created>1544868637875</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1544868637875</updated>
+    </task>
+    <task id="LOCAL-00067" summary="initial commit">
+      <created>1544869143400</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1544869143400</updated>
+    </task>
+    <task id="LOCAL-00068" summary="initial commit">
+      <created>1544869618422</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1544869618422</updated>
+    </task>
+    <task id="LOCAL-00069" summary="initial commit">
+      <created>1544870691000</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1544870691000</updated>
+    </task>
+    <task id="LOCAL-00070" summary="initial commit">
+      <created>1544871162058</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1544871162058</updated>
+    </task>
+    <task id="LOCAL-00071" summary="initial commit">
+      <created>1544871550619</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1544871550619</updated>
+    </task>
+    <task id="LOCAL-00072" summary="initial commit">
+      <created>1544872716654</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1544872716654</updated>
+    </task>
+    <task id="LOCAL-00073" summary="initial commit">
+      <created>1544872919182</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1544872919182</updated>
+    </task>
+    <task id="LOCAL-00074" summary="initial commit">
+      <created>1544873552727</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1544873552727</updated>
+    </task>
+    <task id="LOCAL-00075" summary="initial commit">
+      <created>1544873774156</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1544873774156</updated>
+    </task>
+    <task id="LOCAL-00076" summary="initial commit">
+      <created>1544874064636</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1544874064636</updated>
+    </task>
+    <task id="LOCAL-00077" summary="initial commit">
+      <created>1544874353534</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1544874353534</updated>
+    </task>
+    <task id="LOCAL-00078" summary="initial commit">
+      <created>1544874733161</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1544874733161</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="920" extended-state="6" />
@@ -205,9 +609,9 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32996207" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.37957126" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.48546144" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -217,6 +621,7 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="chrome crash fix" />
     <MESSAGE value="initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
@@ -227,54 +632,8 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/requirement.txt" />
-    <entry file="file://$PROJECT_DIR$/rf_test/resource/faker.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rf_test/bin/run-tests-in-virtual-screen.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rf_test/bin/chromedriver.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="77" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rf_test/bin/chromium-browser.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rf_test/resource/simpletest.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="10" selection-start-line="10" selection-end-line="13" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/rf_test/resource/faker.robot" />
+    <entry file="file://$PROJECT_DIR$/rf_test/resource/simpletest.robot" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -282,51 +641,185 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rf_test/resource/keywords/web_app_keywords.robot">
+    <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myshop/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#222#231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/cart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/static/css/base.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/templates/shop/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/templates/shop/product/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/forms.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/templates/cart/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="16" column="27" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orders/templates/orders/order/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orders/templates/orders/order/created.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/templates/shop/product/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="10" column="66" lean-forward="true" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orders/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml_old" />
+    <entry file="file://$PROJECT_DIR$/rf_test/bin/chromium-browser.sh" />
+    <entry file="file://$PROJECT_DIR$/rf_test/bin/run-tests-in-virtual-screen.sh" />
+    <entry file="file://$PROJECT_DIR$/rf_test/bin/chromedriver.sh" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="645">
+            <caret line="43" column="3" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="38" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rf_test/test/gherkin_login.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        <state relative-caret-position="45">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding>
-            <element signature="e#0#1100#0" expanded="true" />
+            <element signature="e#0#582#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="347">
+          <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myshop/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="15">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
           <folding>
             <element signature="e#307#316#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/runDjango.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rf_test/resource/keywords/web_app_keywords.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="195">
+          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
         </state>
       </provider>
     </entry>
