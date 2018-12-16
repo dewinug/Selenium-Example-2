@@ -9,9 +9,9 @@ test:
   - export DATABASE_URL=postgres://postgres:@postgres:5432/python-test-app
   - cp requirements.txt /tmp/requirements.txt
   - pip install -r /tmp/requirements.txt
-  - python manage.py makemigrations </dev/null &>/dev/null &
-  - python manage.py migrate </dev/null &>/dev/null &
-  - python manage.py runserver </dev/null &>/dev/null &
+#  - python manage.py makemigrations </dev/null &>/dev/null &
+#  - python manage.py migrate </dev/null &>/dev/null &
+#  - python manage.py runserver </dev/null &>/dev/null &
   - curl localhost:8000
   - CHROMEDRIVER_VERSION=`wget --no-verbose --output-document - https://chromedriver.storage.googleapis.com/LATEST_RELEASE`
   - wget --no-verbose --output-document /tmp/chromedriver_linux64.zip http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip

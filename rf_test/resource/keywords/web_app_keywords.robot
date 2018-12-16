@@ -7,8 +7,10 @@ Library    OperatingSystem
 Library    FakerLibrary
 
 *** Variables ***
-${STAGING_PAGE URL}         https://security-scorecard-online-stor.herokuapp.com
-${TEST_PAGE URL}         http://localhost:8000
+#${STAGING_PAGE URL}         https://security-scorecard-online-stor.herokuapp.com
+#${TEST_PAGE URL}         http://localhost:8000
+${PAGE URL}         https://security-scorecard-online-stor.herokuapp.com
+
 ${BROWSER}        chrome
 ${DELAY}          0.5
 
@@ -30,9 +32,8 @@ Open Headless Chrome Browser to Page
     Call Method    ${chrome_options}    add_argument    --no-sandbox
     Create Webdriver    Chrome    chrome_options=${chrome_options}
     Set Window Size    1920    1080
-    Run Keyword If      "${APP_ENV}" == "test"      Set Global Variable        ${PAGE URL}    ${TEST_PAGE URL}
-    Run Keyword If      "${APP_ENV}" == "staging"      Set Global Variable        ${PAGE URL}    ${STAGING_PAGE URL}
-    log to console    ${PAGE URL}
+#    Run Keyword If      "${APP_ENV}" == "test"      Set Global Variable        ${PAGE URL}    ${TEST_PAGE URL}
+#    Run Keyword If      "${APP_ENV}" == "staging"      Set Global Variable        ${PAGE URL}    ${STAGING_PAGE URL}
     Go To    ${PAGE URL}
     Main Page Should Be Opened
 
