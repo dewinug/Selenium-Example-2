@@ -9,15 +9,13 @@ test:
   - export DATABASE_URL=postgres://postgres:@postgres:5432/python-test-app
   - cp requirements.txt /tmp/requirements.txt
   - pip install -r /tmp/requirements.txt
-#  - python manage.py makemigrations </dev/null &>/dev/null &
-#  - python manage.py migrate </dev/null &>/dev/null &
-#  - python manage.py runserver </dev/null &>/dev/null &
   - CHROMEDRIVER_VERSION=`wget --no-verbose --output-document - https://chromedriver.storage.googleapis.com/LATEST_RELEASE`
   - wget --no-verbose --output-document /tmp/chromedriver_linux64.zip http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip
   - unzip -qq /tmp/chromedriver_linux64.zip -d /opt/chromedriver
   - chmod +x /opt/chromedriver/chromedriver
   - ln -fs /opt/chromedriver/chromedriver /usr/local/bin/chromedriver
   - robot -v BROWSER:HeadlessChrome -v APP_ENV:test -d rf_test/reports rf_test/test
+
   artifacts:
     paths:
     - /builds/sejuba1/security-scorecard-online-store/rf_test/reports
@@ -26,7 +24,8 @@ test:
 pages:
     stage: deploy
     script:
-      - echo 'Nothing to do...'
+      - mkdir public
+      - mv /builds/sejuba1/security-scorecard-online-store/rf_test/reports/* public
     artifacts:
       paths:
         - public
