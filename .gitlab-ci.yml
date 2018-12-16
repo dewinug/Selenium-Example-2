@@ -20,17 +20,16 @@ test:
   - robot -v BROWSER:HeadlessChrome -v APP_ENV:test -d rf_test/reports rf_test/test
   artifacts:
     paths:
-      - /builds/sejuba1/security-scorecard-online-store/rf_test/reports
-  pages:
+    - /builds/sejuba1/security-scorecard-online-store/rf_test/reports
+  only:
+    - master
+pages:
     stage: deploy
     script:
       - echo 'Nothing to do...'
     artifacts:
       paths:
         - public
-  only:
-    - master
-
 
 #staging:
 #  type: deploy
