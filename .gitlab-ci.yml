@@ -1,5 +1,13 @@
-
-test:
+deploy-to-test-enviroment:
+  type: deploy
+  script:
+  - apt-get update -qy
+  - apt-get install -y ruby-dev
+  - gem install dpl
+  - dpl --provider=heroku --app=security-scorecard-online-stor --api-key=$HEROKU_STAGING_API_KEY
+  only:
+  - master
+executing-test:
   script:
   - apt-get update && apt-get install --quiet --assume-yes python-dev python-pip unzip wget
   - echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
@@ -21,7 +29,7 @@ test:
     - /builds/sejuba1/security-scorecard-online-store/rf_test/reports
   only:
     - master
-pages:
+publish-test-report:
     stage: deploy
     script:
       - mkdir public
@@ -30,12 +38,4 @@ pages:
       paths:
         - public
 
-#staging:
-#  type: deploy
-#  script:
-#  - apt-get update -qy
-#  - apt-get install -y ruby-dev
-#  - gem install dpl
-#  - dpl --provider=heroku --app=security-scorecard-online-stor --api-key=$HEROKU_STAGING_API_KEY
-#  only:
-#  - master
+
