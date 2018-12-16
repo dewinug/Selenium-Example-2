@@ -14,7 +14,7 @@ Resource          ../resource/keywords/web_app_keywords.robot
 Suite Teardown    Close Browser
 
 *** Test Cases ***
-Order Produt
+Order Product
     Given I Open Browser To main page
     And I add product "pilsner" to cart
     And click link    Continue shopping
