@@ -7,6 +7,7 @@ deploy-to-test-enviroment:
   - dpl --provider=heroku --app=security-scorecard-online-stor --api-key=$HEROKU_STAGING_API_KEY
   only:
   - master
+
 executing-test:
   script:
   - apt-get update && apt-get install --quiet --assume-yes python-dev python-pip unzip wget
@@ -34,7 +35,7 @@ publish-test-report:
     script:
       - reporDir=$(date +%Y%m%d_%H%M%S)
       - mkdir public/$reporDir
-      - mv /builds/sejuba1/security-scorecard-online-store/rf_test/reports/* public/$reporDir
+      - mv /builds/sejuba1/security-scorecard-online-store/rf_test/reports/$reporDir public/
     artifacts:
       paths:
         - public
