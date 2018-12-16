@@ -1,4 +1,10 @@
+stages:
+  - deploy
+  - test
+  - reporting
+
 deploy-to-test-enviroment:
+  stage: deploy
   type: deploy
   script:
   - apt-get update -qy
@@ -9,13 +15,13 @@ deploy-to-test-enviroment:
   - master
 
 executing-test:
+  stage: test
   script:
   - apt-get update && apt-get install --quiet --assume-yes python-dev python-pip unzip wget
   - echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
   - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
   - apt update
   - apt install -y google-chrome-stable
-  - export DATABASE_URL=postgres://postgres:@postgres:5432/python-test-app
   - cp requirements.txt /tmp/requirements.txt
   - pip install -r /tmp/requirements.txt
   - CHROMEDRIVER_VERSION=`wget --no-verbose --output-document - https://chromedriver.storage.googleapis.com/LATEST_RELEASE`
@@ -31,7 +37,7 @@ executing-test:
   only:
     - master
 publish-test-report:
-    stage: deploy
+    stage: reporting
     script:
       - reporDir=$(date +%Y%m%d_%H%M%S)
       - here=$(pwd)
