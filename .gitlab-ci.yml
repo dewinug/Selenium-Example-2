@@ -19,13 +19,16 @@ test:
   - ln -fs /opt/chromedriver/chromedriver /usr/local/bin/chromedriver
   - ls
   - robot -v BROWSER:HeadlessChrome -v APP_ENV:test -d rf_test/reports rf_test/test
-  pages:
-    stage: deploy
-    script:
-      - echo 'Nothing to do...'
-    artifacts:
-      paths:
-        - public
+#  artifacts:
+#    paths:
+#      - build/reports/tests/test/
+#  pages:
+#    stage: deploy
+#    script:
+#      - echo 'Nothing to do...'
+#    artifacts:
+#      paths:
+#        - public
   only:
     - master
 
