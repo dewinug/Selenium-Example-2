@@ -29,20 +29,20 @@ executing-test:
   - unzip -qq /tmp/chromedriver_linux64.zip -d /opt/chromedriver
   - chmod +x /opt/chromedriver/chromedriver
   - ln -fs /opt/chromedriver/chromedriver /usr/local/bin/chromedriver
-  - reportDir=$(date +%Y%m%d_%H%M%S)
-  - robot -v BROWSER:HeadlessChrome -v APP_ENV:test -d rf_test/$reportDir rf_test/test
+  - robot -v BROWSER:HeadlessChrome -v APP_ENV:test -d rf_test/reports rf_test/test
 
   artifacts:
     paths:
-    - /builds/sejuba1/security-scorecard-online-store/rf_test/$reportDir
+    - /builds/sejuba1/security-scorecard-online-store/rf_test/reports
   only:
     - master
 publish-test-report:
     stage: reporting
     script:
       - mkdir public
-      - mv /builds/sejuba1/security-scorecard-online-store/rf_test/$reportDir public/
+      - mv /builds/sejuba1/security-scorecard-online-store/rf_test/reports/* public/
     artifacts:
+      expire_in: 1 week
       paths:
         - public
 
