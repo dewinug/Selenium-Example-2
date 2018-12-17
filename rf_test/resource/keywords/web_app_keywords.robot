@@ -49,6 +49,13 @@ Main Page Should Be Opened
     [Documentation]
     Title Should Be    Products
 
+Open Browser to Page
+    [Documentation]
+    Open Browser    ${PAGE URL}    ${BROWSER}
+    Maximize Browser Window
+    Set Selenium Speed    ${DELAY}
+    Main Page Should Be Opened
+
 I add product "${link}" to cart
     [Documentation]
     click link    ${link}

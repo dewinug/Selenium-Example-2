@@ -45,5 +45,3 @@ publish-test-report:
       expire_in: 1 week
       paths:
         - public
-
-
